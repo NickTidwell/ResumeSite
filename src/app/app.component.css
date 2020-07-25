@@ -30,3 +30,7 @@
 .spacer {
   flex: 1 1 auto;
 }
+
+.mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button{
+  display: flex;
+}
