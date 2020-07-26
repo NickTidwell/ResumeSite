@@ -48,6 +48,10 @@
     padding-right: 10px;
 }
 
+.description{
+    display: grid;
+}
+
 .wall{
     border-right: 4px solid #C1C8E4;
     float: left;
@@ -66,7 +70,7 @@
   
   .grid-container-small > div {
       padding: 5px 0px 5px;
-      width: 100px;
+      width: 80px;
       font-size: small;
     text-align: center;
     background-color: #C1C8E4;
