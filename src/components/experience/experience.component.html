@@ -7,11 +7,11 @@
             <p class="imageCaption">Lockheed Martin</p>
             <div class ="category wall">
                     <div>
-                        <img class="image" src="../../assets/img/lm.png" >  
+                        <img [ngClass.gt-sm]="'image'" [ngClass.lt-md]="'image-sm'" src="../../assets/img/lm.png" >  
                     </div>
 
             </div>
-            <div class="description">
+            <div [ngClass.gt-sm]="'description'">
                 <ul class="job-desc-list">
                     <dl>Summer 2019</dl>
                     <li>Design and implement proprietary software features for the F-35 tactical environmental simulator using C++, Python, SQL.</li>
@@ -26,14 +26,15 @@
         </div>
 
         <div>
-            <p class="imageCaption">Electric Data Systems</p>
+                <p class="imageCaption">Electric Data Systems</p>
+
             <div class ="category wall">
                     <div>
-                        <img class="image" src="../../assets/img/eds.png" >  
+                        <img [ngClass.gt-sm]="'image'" [ngClass.lt-md]="'image-sm'" src="../../assets/img/eds.png" >  
                     </div>
 
             </div>
-            <div class="description">
+            <div [ngClass.gt-sm]="'description'">
                 <ul class="job-desc-list">
                     <dl>2015-2019</dl>
                     <li>Developed insurance eligibility verification automation console applications on over 40 websites using C#, MSSQL. This automation resulted in reducing clients staffing by 60%.</li>
