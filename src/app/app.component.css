@@ -1,5 +1,5 @@
 .mat-icon-button{
-  min-width: 100px;
+  min-width: 120px;
 }
 
 
@@ -32,5 +32,6 @@
 }
 
 .mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button{
-  display: flex;
+  display: inline-flex;
+
 }
