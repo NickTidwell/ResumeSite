@@ -1,132 +1,221 @@
-.page{
-    width: 100%;
+.page {
+  width: 100%;
 }
 
-.page-header{
-    position: relative;
-    left: 5%;
-    text-align: center;
-    color: #5680e9;
-    font-size: xx-large;
-    padding-top: 10px;
-    font-weight: 800;
-    padding-bottom: 5px;
-    border-bottom: 3px solid #5680e9;
-    width: 50%;
+.page-header {
+  position: relative;
+  left: 5%;
+  text-align: center;
+  color: #5680e9;
+  font-size: xx-large;
+  padding-top: 10px;
+  font-weight: 800;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #5680e9;
+  width: 50%;
 }
 
-.sub-header{
-    text-align: left;
-    background: #5ab9ea;
-    color: white;
-    text-shadow: 1px 1px navy;
-    font-size: x-large;
- 
+.sub-header {
+  text-align: left;
+  background: #5ab9ea;
+  color: white;
+  text-shadow: 1px 1px navy;
+  font-size: x-large;
 }
-.imageCaption{
-    color: #5ab9ea;
-    font-size: large;
-    font-weight: 500;
-    border-bottom: 2px solid #5680e9;
-    width: 300px;
-}
-
-.category{
-    margin-left: 5%;
-    margin-top: 20px;
+.imageCaption {
+  color: #5ab9ea;
+  font-size: large;
+  font-weight: 500;
+  border-bottom: 2px solid #5680e9;
+  width: 300px;
 }
 
-.card{
-    width: 100%;
-    margin: 10px;
+.category {
+  margin-left: 5%;
+  margin-top: 20px;
 }
 
-.card-subTitle{
-    display: flex;
-    align-items: center;
-    border-bottom: solid 2px lightblue;
-    background-color: #01478c;
-    padding-bottom: 10px;
-}
-.captionText{
-    text-align: center;
-    border: solid 2px aliceblue;
-    background-color: darkblue;
-    color: white;
-    width: fit-content;
-    margin: 0 auto;
-    padding: 0 50px 0 50px;
-    border-radius: 20px;
-}
-.header{
-    background-image: url("../../assets/img/Live-Background.svg");
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    transition: .4s;
-    height: 200px;
-    color: aliceblue;
-
-}
-.image{
-    width: 100px;
-    max-height: 100px;
-    padding-right: 20px;
+.card {
+  width: 100%;
+  margin: 10px;
 }
 
-.image-sm{
-    width: 75px;
-    max-height: 100px;
-    padding-right: 10px;
+.card-subTitle {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 2px darkblue;
+  background-color: #76c4d7;
+  padding-bottom: 10px;
+}
+.card-subTitle-bl {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 2px darkblue;
+  background-color: #006fdd;
+  padding-bottom: 10px;
 }
 
-.wall{
-    border-right: 4px solid #C1C8E4;
-    float: left;
+.card-subTitle-rd {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 2px #f26462;
+  background-color: #fd8469;
+  padding-bottom: 10px;
 }
 
+.captionText {
+  text-align: center;
+  border: solid 2px aliceblue;
+  background-color: darkblue;
+  color: white;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 50px 0 50px;
+  border-radius: 20px;
+}
+.header {
+  background-image: url("../../assets/img/Live-Background.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  transition: 0.4s;
+  height: 200px;
+  color: aliceblue;
+}
+.image {
+  width: 100px;
+  max-height: 100px;
+  padding-right: 20px;
+}
 
-  .grid-container-small {
+.image-sm {
+  width: 75px;
+  max-height: 100px;
+  padding-right: 10px;
+}
+
+.wall {
+  border-right: 4px solid #c1c8e4;
+  float: left;
+}
+
+.grid-container-small {
+  display: inline-grid;
+  grid-template-columns: minmax(50px, 500px);
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.grid-container-small > div {
+  padding: 5px 0px 5px;
+  width: 80px;
+  font-size: small;
+  text-align: center;
+  background-color: #76c4d7;
+  border: 2px solid darkblue;
+  border-radius: 20px;
+}
+
+.grid-container-large {
+  display: inline-grid;
+  grid-template-columns: minmax(100px, 500px);
+  grid-template-columns: auto auto auto;
+  grid-gap: 15px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.grid-container-large > div {
+  padding: 5px 0px 5px;
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #76c4d7;
+  border: 2px solid darkblue;
+  border-radius: 20px;
+}
+
+.grid-container-small-bl {
     display: inline-grid;
     grid-template-columns: minmax(50px, 500px);
-    grid-template-columns: auto auto auto;    
+    grid-template-columns: auto auto auto;
     grid-gap: 10px;
     padding: 10px;
     margin-left: 20px;
   }
   
-  .grid-container-small > div {
-      padding: 5px 0px 5px;
-      width: 80px;
-      font-size: small;
+  .grid-container-small-bl > div {
+    padding: 5px 0px 5px;
+    width: 80px;
+    font-size: small;
     text-align: center;
-    background-color: #C1C8E4;
-    border: 2px solid #5680e9;
-    border-radius: 20px
+    background-color: #006fdd;
+    border: 2px solid darkblue;
+    color: aliceblue;
+    border-radius: 20px;
   }
-
   
-  .grid-container-large {
+  .grid-container-large-bl {
     display: inline-grid;
     grid-template-columns: minmax(100px, 500px);
-    grid-template-columns: auto auto auto;    
+    grid-template-columns: auto auto auto;
     grid-gap: 15px;
     padding: 10px;
     margin-left: 20px;
   }
   
-  .grid-container-large > div {
-      padding: 5px 0px 5px;
-      width: 200px;
-      font-size: 20px;
+  .grid-container-large-bl > div {
+    padding: 5px 0px 5px;
+    width: 200px;
+    font-size: 20px;
     text-align: center;
-    background-color: #C1C8E4;
-    border: 2px solid #5680e9;
+    background-color: #006fdd;
+    border: 2px solid darkblue;
+    color: aliceblue;
     border-radius: 20px;
   }
 
-  .mat-card{
-      margin: 10px;
+  .grid-container-small-rd {
+    display: inline-grid;
+    grid-template-columns: minmax(50px, 500px);
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    margin-left: 20px;
   }
+  
+  .grid-container-small-rd > div {
+    padding: 5px 0px 5px;
+    width: 80px;
+    font-size: small;
+    text-align: center;
+    background-color: #fd8469;
+    border: 2px solid #f26462;
+    border-radius: 20px;
+  }
+  
+  .grid-container-large-rd {
+    display: inline-grid;
+    grid-template-columns: minmax(100px, 500px);
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  
+  .grid-container-large-rd > div {
+    padding: 5px 0px 5px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fd8469;
+    border: 2px solid #f26462;
+    border-radius: 20px;
+  }
+.mat-card {
+  margin: 10px;
+}
