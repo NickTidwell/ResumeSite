@@ -1,18 +1,20 @@
 <div style="background: aliceblue;" class="page">
+    <div class="header">
+        <h1 class="captionText">Experience</h1>
+    </div>
     <div>
-        <h1 class="page-header">Experience</h1>
 
         <mat-card>
 
             <div>
                 <p class="imageCaption">Lockheed Martin</p>
-                <div class="category wall">
+                <div [ngClass.gt-sm]="'category wall'" [ngClass.lt-md]="'category'">
                     <div>
                         <img [ngClass.gt-sm]="'image'" [ngClass.lt-md]="'image-sm'" src="../../assets/img/lm.png">
                     </div>
 
                 </div>
-                <div class="description">
+                <div [ngClass.gt-sm]="'description'" [ngClass.lt-md]="'description-sm'">
                     <ul class="job-desc-list">
                         <dl>Summer 2019</dl>
                         <li>Design and implement proprietary software features for the F-35 tactical environmental
@@ -33,13 +35,13 @@
         <div>
             <p class="imageCaption">Electric Data Systems</p>
 
-            <div class="category wall">
+            <div [ngClass.gt-sm]="'category wall'" [ngClass.lt-md]="'category'">
                 <div>
                     <img [ngClass.gt-sm]="'image'" [ngClass.lt-md]="'image-sm'" src="../../assets/img/eds.png">
                 </div>
 
             </div>
-            <div class="description">
+            <div [ngClass.gt-sm]="'description'" [ngClass.lt-md]="'description-sm'">
                 <ul class="job-desc-list">
                     <dl>2015-2019</dl>
                     <li>Developed insurance eligibility verification automation console applications on over 40 websites

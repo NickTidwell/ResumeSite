@@ -36,6 +36,28 @@
     margin-top: 20px;
 }
 
+.captionText{
+    text-align: center;
+    border: solid 2px aliceblue;
+    background-color: darkblue;
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 50px 0 50px;
+    border-radius: 20px;
+}
+.header{
+    background-image: url("../../assets/img/Live-Background.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    transition: .4s;
+    height: 200px;
+    color: aliceblue;
+
+}
 .image{
     width: 100px;
     max-height: 100px;

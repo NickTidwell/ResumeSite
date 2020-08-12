@@ -6,16 +6,25 @@
     position: relative;
     left: 5%;
     text-align: center;
-    color: #5680e9;
+    color: aliceblue;
     font-size: xx-large;
     padding-top: 10px;
     font-weight: 800;
     padding-bottom: 5px;
-    border-bottom: 3px solid #5680e9;
+    border-bottom: 3px solid aliceblue;
     width: 50%;
 }
 
-
+.captionText{
+    text-align: center;
+    border: solid 2px aliceblue;
+    background-color: darkblue;
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 50px 0 50px;
+    border-radius: 20px;
+}
 .category{
     margin-left: 5%;
     margin-top: 20px;
@@ -39,6 +48,18 @@
     float: left;
 
 }
+.header{
+    background-image: url("../../assets/img/Live-Background.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    transition: .4s;
+    height: 200px;
+    color: aliceblue;
+
+}
 
 .imageCaption{
     margin-left: 5%;
@@ -52,6 +73,9 @@
      display: grid;
  }
 
+ .description-sm{
+    display: block;
+}
 
  
  .job-desc-list > li{

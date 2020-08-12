@@ -18,6 +18,7 @@
     align-content: center;
     flex-direction: column;
     transition: .4s;
+    height: 200px;
 }
 .page{
     width: 100%;
