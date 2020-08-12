@@ -216,6 +216,10 @@
     border: 2px solid #f26462;
     border-radius: 20px;
   }
+
+  .mat-h1, .mat-headline, .mat-typography h1 {
+    font: 400 20px/34px Roboto, "Helvetica Neue", sans-serif;
+  }
 .mat-card {
   margin: 10px;
 }

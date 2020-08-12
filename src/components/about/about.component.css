@@ -51,15 +51,10 @@
     width: 100%;
     margin: 10px;
 }
-.card-title-red{
+.card-title{
     text-align: center;
-    border-bottom: solid 2px #782F40;
 }
 
-.card-title-bl{
-    text-align: center;
-    border-bottom: solid 2px #5680e9;
-}
 .profile-pic{
     max-width: 150px;
     display: inherit;
@@ -83,21 +78,18 @@
     display: flex;
     align-items: center;
     border-bottom: solid 2px #782F40;
+    border-top: solid 2px #782F40;
     background-color: #CEB888;
     padding-bottom: 10px;
 }
 
-.card-subTitle{
-    display: flex;
-    align-items: center;
-    border-bottom: solid 2px #782F40;
-    background-color: #CEB888;
-    padding-bottom: 10px;
-}
+
 .card-subTitle-bl{
     display: flex;
     align-items: center;
     border-bottom: solid 2px #5680e9;
+    border-top: solid 2px #5680e9;
+
     background-color: lightblue;
     padding-bottom: 10px;
 }
