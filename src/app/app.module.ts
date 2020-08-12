@@ -7,11 +7,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ExperienceComponent } from '../components/experience/experience.component'
 import { ProjectsComponent} from '../components/projects/projects.component'
+import { AboutComponent} from "../components/about/about.component"
+import { ContactComponent } from "../components/contact/contact.component"
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SkillsComponent } from '../components/skills/skills.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     SkillsComponent,
     ExperienceComponent,
     ProjectsComponent,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +35,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatButtonModule,
     MatSidenavModule,
     FlexLayoutModule,
-    MatGridListModule
+    MatGridListModule,
+    MatCardModule,
+    MatListModule
     
   ],
   providers: [],

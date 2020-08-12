@@ -4,12 +4,8 @@
  <mat-toolbar color="primary">
     <div fxShow="true" fxHide.lt-md="true">
       <span>
-
-      <button mat-icon-button class="toolbar_menu_button" (click)="setPage('home')">
-        <mat-icon>home</mat-icon> Home
-      </button>
       <button mat-icon-button class="toolbar_menu_button" (click)="setPage('about')">
-        <mat-icon>face</mat-icon> About
+        <mat-icon>face</mat-icon> Home
       </button>
 
       <button mat-icon-button class="toolbar_menu_button" (click)="setPage('experience')">
@@ -21,9 +17,6 @@
       <button mat-icon-button class="toolbar_menu_button" (click)="setPage('projects')">
         <mat-icon>folder</mat-icon> Projects
       </button>
-      <button mat-icon-button class="toolbar_menu_button" (click)="setPage('contact')">
-        <mat-icon>contact_mail</mat-icon> Contact
-      </button>
     </span>
 
     </div>
@@ -34,20 +27,16 @@
         </a>
       </div>
       <span class="spacer"></span>
-    <p>Last Updated 07/25/2020, WIP</p>
+    <p style="font-size: small;">Last Updated 07/25/2020, WIP</p>
   </mat-toolbar>
 
   <mat-sidenav-container fxFlexFill class="example-container">
     <mat-sidenav #sidenav fxLayout="column">
       <div fxLayout="column">
         <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
-        <button class="sideButton" mat-icon-button class="toolbar_menu_button" (click)="setPage('home'); sidenav.toggle()">
-          <mat-icon>home</mat-icon> Home
-        </button>
         <button mat-icon-button class="toolbar_menu_button" (click)="setPage('about'); sidenav.toggle()">
-          <mat-icon>face</mat-icon> About
+          <mat-icon>face</mat-icon> Home
         </button>
-  
         <button mat-icon-button class="toolbar_menu_button" (click)="setPage('experience'); sidenav.toggle()">
           <mat-icon>work</mat-icon> Experience
         </button>
@@ -57,23 +46,15 @@
         <button mat-icon-button class="toolbar_menu_button" (click)="setPage('projects'); sidenav.toggle()">
           <mat-icon>folder</mat-icon> Projects
         </button>
-        <button mat-icon-button class="toolbar_menu_button" (click)="setPage('contact'); sidenav.toggle()">
-          <mat-icon>contact_mail</mat-icon> Contact
-        </button>
       </div>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
-      <div *ngIf="currentPage ==='home'" class="background">
-
-      <div class="center-header">
-        <h1 class="center-text">Nicholas Tidwell</h1>
-        <h1 class="center-text">Software Engineer</h1>
-      </div>
-    
-    </div>
     <skills *ngIf="currentPage === 'skills'"></skills>
     <experience *ngIf="currentPage === 'experience'"></experience>
-    <projects *ngIf="currentPage === 'projects'"></projects></mat-sidenav-content>
+    <projects *ngIf="currentPage === 'projects'"></projects>
+    <about *ngIf="currentPage === 'about'"></about>
+
+  </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
 

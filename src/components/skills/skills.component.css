@@ -95,5 +95,9 @@
     text-align: center;
     background-color: #C1C8E4;
     border: 2px solid #5680e9;
-    border-radius: 10%;
+    border-radius: 20px;
+  }
+
+  .mat-card{
+      margin: 10px;
   }
