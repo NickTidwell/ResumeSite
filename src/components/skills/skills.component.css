@@ -36,14 +36,18 @@
     margin-top: 20px;
 }
 
-.card-container{
+.card{
+    width: 100%;
+    margin: 10px;
+}
+
+.card-subTitle{
     display: flex;
+    align-items: center;
+    border-bottom: solid 2px lightblue;
+    background-color: #01478c;
+    padding-bottom: 10px;
 }
-
-.card-container-sm{
-    display: contents;
-}
-
 .captionText{
     text-align: center;
     border: solid 2px aliceblue;
@@ -78,13 +82,9 @@
     padding-right: 10px;
 }
 
-.description{
-}
-
 .wall{
     border-right: 4px solid #C1C8E4;
     float: left;
-
 }
 
 
@@ -104,7 +104,7 @@
     text-align: center;
     background-color: #C1C8E4;
     border: 2px solid #5680e9;
-    border-radius: 10%;
+    border-radius: 20px
   }
 
   
