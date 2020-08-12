@@ -71,11 +71,17 @@
 
 .mat-list-base .mat-list-item.mat-list-item-with-avatar, .mat-list-base .mat-list-option.mat-list-item-with-avatar {
     height: fit-content;
+    padding: 10px 18px;
+
 }
 
 ::ng-deep .mat-list .mat-list-item .mat-line{
     word-wrap: break-word;
    white-space: pre-wrap;
+}
+
+.mat-list-base .mat-list-item {
+    font-size: 14px;
 }
 .header{
     background-image: url("../../assets/img/Live-Background.svg");
