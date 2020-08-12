@@ -48,6 +48,33 @@
     float: left;
 
 }
+
+.card{
+    width: 100%;
+    margin: 10px;
+}
+
+.card-subTitle{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px lightblue;
+    background-color: #01478c;
+    padding-bottom: 10px;
+}
+.card-subTitle-eds{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px lightblue;
+    background-color: #0979bf;
+    padding-bottom: 10px;
+}
+
+
+
+::ng-deep .mat-list .mat-list-item .mat-line{
+    word-wrap: break-word;
+   white-space: pre-wrap;
+}
 .header{
     background-image: url("../../assets/img/Live-Background.svg");
     background-repeat: no-repeat;
@@ -59,6 +86,10 @@
     height: 200px;
     color: aliceblue;
 
+}
+
+.list-icon{
+    color: #01478c;
 }
 
 .imageCaption{

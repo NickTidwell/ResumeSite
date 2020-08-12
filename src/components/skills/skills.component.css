@@ -36,6 +36,14 @@
     margin-top: 20px;
 }
 
+.card-container{
+    display: flex;
+}
+
+.card-container-sm{
+    display: contents;
+}
+
 .captionText{
     text-align: center;
     border: solid 2px aliceblue;

@@ -23,7 +23,10 @@
 .page{
     width: 100%;
 }
-
+::ng-deep .mat-list .mat-list-item .mat-line{
+    word-wrap: break-word;
+   white-space: pre-wrap;
+}
 .list-icon{
     color: #782F40
 }
