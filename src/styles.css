@@ -2,3 +2,58 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+    --btn-bg-color: #white;
+    --toolbar-color: #01478c;
+  }
+  body.dark-theme {
+    --text-color: #eee;
+    --bkg-color-div: #222831;
+    --toolbar-color: #222831;
+    --bkg-color: #252222;
+    --btn-txt-color: rgb(46, 43, 43);
+    --btn-bg-color: rgb(20, 211, 195);
+    --strong-color: #6E85B2;
+  }
+  
+  .wrapper,
+  .header,
+  body {
+    background: var(--bkg-color);
+  }
+
+  .dark-text{
+    color: black;
+  }
+
+  .mat-list-base .mat-subheader{
+    color: var(--text-color);
+  }
+
+  .mat-toolbar.mat-primary{
+    background: var(--toolbar-color);
+  }
+  strong{
+    color: var(--strong-color);
+  }
+  .mat-card
+  {
+    color: var(--text-color);
+    background: var(--bkg-color-div);
+  }
+  .card-container{
+    background: var(--bkg-color);
+  }
+  .mat-list-base .mat-list-item{
+    color: var(--text-color);
+  }
+
+  .mat-raised-button {
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    color: var(--btn-txt-color);
+    background-color: var(--btn-bg-color);
+  }
+  

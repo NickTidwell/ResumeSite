@@ -15,4 +15,8 @@ export class AppComponent {
    setPage(pageName: string){
      this.currentPage = pageName;
    }
+
+   toggleTheme(): void {
+    document.body.classList.toggle('dark-theme');
+  }
 }

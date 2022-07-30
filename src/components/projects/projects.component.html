@@ -2,7 +2,7 @@
     <div class="header">
         <h1 class="captionText">Projects</h1>
     </div>
-    <div>
+    <div class="wrapper">
 
         <div [ngClass.gt-sm]="'card-container row mt-4'" [ngClass.lt-md]="'card-container-sm row mt-4'">
             <div class='card-sm col-6'>
@@ -10,7 +10,7 @@
                     <div class="card-subTitle-yl">
                         <img [ngClass.gt-sm]="'image'" [ngClass.lt-md]="'image-sm'"
                             src="../../assets//img/stockmarket.jpg">
-                        <div>
+                        <div class="dark-text">
                             <h1 style="font: 400 20px/32px Roboto, 'Helvetica Neue', sans-serif; margin: 0px;">Stock Market Prediction</h1>
                             <h3>Python Application Development</h3>
                         </div>
@@ -44,7 +44,7 @@
                 <mat-card>
                     <div class="card-subTitle">
                         <img [ngClass.gt-sm]="'image'" [ngClass.lt-md]="'image-sm'" src="../../assets//img/poker.png">
-                        <div>
+                        <div class="dark-text">
                             <h1 style="font: 400 20px/32px Roboto, 'Helvetica Neue', sans-serif; margin: 0px;">Online Poker</h1>
                             <h3>Web Application Development</h3>
                         </div>
@@ -75,7 +75,7 @@
                 </mat-card>
             </div>
             <div class='card-sm col-6'>
-                <mat-card>
+                <mat-card class="dark-text">
                     <div class="card-subTitle-bl">
                         <img [ngClass.gt-sm]="'image'" [ngClass.lt-md]="'image-sm'"
                             src="../../assets//img/face-detection.png">
